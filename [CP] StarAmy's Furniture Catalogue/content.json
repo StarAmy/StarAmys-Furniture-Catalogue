@@ -1,0 +1,66 @@
+{"Format": "2.0.0",
+"Changes": [
+
+ {
+"Action": "Load",
+"Target": "Tilesheets/StarAmy_Catalogue",
+"FromFile": "assets/StarAmy_Catalogue.png"
+},
+
+{
+"LogName": "Add Furniture Catalogue Shop",
+"Action": "EditData",
+"Target": "Data/Shops",
+"Entries": 
+{
+"StarAmy_Catalogue": 
+    {
+    "PriceModifiers": null,
+    "PriceModifierMode": "Stack",
+    "Items": [{"Price": 0,
+    "AvailableStockLimit": "Global",
+    "AvoidRepeat": false,
+    "UseObjectDataPrice": false,
+    "IgnoreShopPriceModifiers": false,
+    "PriceModifiers": null,
+    "PriceModifierMode": "Stack",
+    "AvailableStockModifiers": null,
+    "AvailableStockModifierMode": "Stack",
+    "Condition": null,"Id": "Default",
+    "ItemId": "ALL_ITEMS (F)","MinStack": -1,
+    "MaxStack": -1,
+    "Quality": -1,
+    "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_staramy"
+    },
+],
+
+"CustomFields":{"HappyHomeDesigner/Catalogue":"true"}}}},
+
+{
+"LogName": "Add Furniture Catalogue Item",
+"Action": "EditData",
+"Target": "Data/Furniture",
+"Entries": 
+{"StarAmy_Catalogue":"StarAmy_Catalogue/other/3 2/3 1/1/20000/2/{{i18n:StarAmy_Catalogue}}/0/Tilesheets\\StarAmy_Catalogue/true"}
+},
+
+{
+"LogName": "Add Furniture Catalogue Tile Actions",
+"Action": "EditData",
+"Target":"sophie.Calcifer/FurnitureActions",
+"Entries": {"(F)StarAmy_Catalogue": 
+{"TileActions": [{"TileAction": "OpenShop StarAmy_Catalogue"}]}
+}
+},
+
+{"LogName": "Add Furniture Catalogue to Robin's Shop",
+"Action": "EditData",
+"Target": "Data/Shops",
+"TargetField": [ "Carpenter", "Items" ],
+"Entries": 
+{"StarAmy_Catalogue":{"Id": "StarAmy_Catalogue","ItemId":"(F)StarAmy_Catalogue","Price": 20000}
+
+}
+},
+]
+}

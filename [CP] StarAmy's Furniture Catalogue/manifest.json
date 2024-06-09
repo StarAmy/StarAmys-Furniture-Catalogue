@@ -1,0 +1,14 @@
+{
+"Name": "[CP] StarAmy's Furniture Catalogue",
+"Author": "StarAmy",
+"Version": "1.0.0",
+"Description": "An optional combined catalogue for all of my furniture mods.",
+"UniqueID": "StarAmy.Catalogue",
+"ContentPackFor": {"UniqueID": "Pathoschild.ContentPatcher"},
+"Dependencies": [
+        {
+            "UniqueID": "sophie.Calcifer",
+            "IsRequired": true
+        }
+    ], 
+}
