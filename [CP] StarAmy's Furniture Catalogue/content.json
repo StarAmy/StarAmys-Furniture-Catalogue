@@ -41,7 +41,7 @@
 "Action": "EditData",
 "Target": "Data/Furniture",
 "Entries": 
-{"StarAmy_Catalogue":"StarAmy_Catalogue/other/3 2/3 1/1/20000/2/{{i18n:StarAmy_Catalogue}}/0/Tilesheets\\StarAmy_Catalogue/true"}
+{"StarAmy_Catalogue":"StarAmy_Catalogue/other/3 2/3 1/1/20000/2/{{i18n:StarAmy_Catalogue.name}}/0/Tilesheets\\StarAmy_Catalogue/true"}
 },
 
 {
@@ -58,7 +58,7 @@
 "Target": "Data/Shops",
 "TargetField": [ "Carpenter", "Items" ],
 "Entries": 
-{"StarAmy_Catalogue":{"Id": "StarAmy_Catalogue","ItemId":"(F)StarAmy_Catalogue","Price": 20000}
+{"StarAmy_Catalogue":{"Id": "StarAmy_Catalogue","ItemId":"(F)StarAmy_Catalogue","Price": 25000}
 
 }
 },
